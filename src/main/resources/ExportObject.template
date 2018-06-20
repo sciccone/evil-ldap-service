@@ -3,14 +3,6 @@ import java.io.IOException;
 
 public class ExportObject {
 
-	static {
-		try {
-			File.createTempFile("executed", ".tmp");
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-	}
-	
 	public ExportObject() {
 		try {
 			System.setSecurityManager(null);
