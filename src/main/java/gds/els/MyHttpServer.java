@@ -18,7 +18,7 @@ import com.sun.net.httpserver.HttpServer;
 public class MyHttpServer {
 
 	private static final String TEMP_DIR = System.getProperty("java.io.tmpdir");
-			
+
 	public static void run(InetAddress host, int port, String command) {
 
 		try {

