@@ -68,6 +68,7 @@
                             <descriptorRefs>
                                 <descriptorRef>jar-with-dependencies</descriptorRef>
                             </descriptorRefs>
+                            <finalName>evil-ldap-service</finalName>
                         </configuration>
                     </execution>
                 </executions>
