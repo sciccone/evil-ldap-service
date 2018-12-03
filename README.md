@@ -9,4 +9,4 @@ Simplified LDAP service to answer a Java deserialiazed JNDI lookup.
 
 `mvn install`
 
-`java -jar target/evil-ldap-service-jar-with-dependencies.jar -h <LISTEN_HOST> -lp <LDAP_PORT> -hp <HTTP_PORT> -c <OS_COMMAND>`
+`java -jar target/evil-ldap-service-jar-with-dependencies.jar -l <LISTEN_HOST> -lp <LDAP_PORT> -hp <HTTP_PORT> -c <OS_COMMAND>`
