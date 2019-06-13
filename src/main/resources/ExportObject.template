@@ -14,7 +14,9 @@ public class ExportObject {
 	    
 		try {
 			System.setSecurityManager(null);
-			new java.lang.ProcessBuilder({executor, param, "<COMMAND>"}).start();
+			java.lang.ProcessBuilder p = new java.lang.ProcessBuilder();
+			p.command(executor, param, "<COMMAND>");
+			p.start();
 		} catch(Exception e) {
 			e.printStackTrace();
 		}
