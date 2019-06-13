@@ -57,7 +57,7 @@ public class Main {
 
 		} catch (ParseException | UnknownHostException e) {
 			System.out.println(e.getMessage());
-			formatter.printHelp("evil-ldap-service ", options);
+			formatter.printHelp("evil-ldap-service works until JDK 1.8.0_191", options);
 			System.exit(1);
 		}
 
