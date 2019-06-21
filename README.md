@@ -1,5 +1,5 @@
 # evil-ldap-service
-Simplified LDAP service to answer a Java deserialiazed JNDI lookup. 
+Simplified LDAP service to answer a vulnerable Java JNDI lookup. 
 
 ## What's simulate 
 
