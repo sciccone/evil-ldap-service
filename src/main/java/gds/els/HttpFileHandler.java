@@ -17,6 +17,7 @@ import com.sun.net.httpserver.HttpExchange;
 import com.sun.net.httpserver.HttpHandler;
 
 
+@SuppressWarnings("restriction")
 public class HttpFileHandler implements HttpHandler {
 
 	private static final String TEMP_DIR = System.getProperty("java.io.tmpdir");

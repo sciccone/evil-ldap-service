@@ -1,23 +1,13 @@
 package gds.els;
 
-import java.io.File;
 import java.io.IOException;
-import java.io.InputStream;
-import java.io.PrintWriter;
 import java.net.InetAddress;
 import java.net.InetSocketAddress;
-import java.nio.charset.StandardCharsets;
-
-import javax.tools.JavaCompiler;
-import javax.tools.ToolProvider;
-
-import org.apache.commons.io.IOUtils;
 
 import com.sun.net.httpserver.HttpServer;
 
+@SuppressWarnings("restriction")
 public class MyHttpServer {
-
-	private static final String TEMP_DIR = System.getProperty("java.io.tmpdir");
 
 	public static void run(InetAddress host, int port, String command) {
 
