@@ -1,7 +1,7 @@
 # evil-ldap-service
 Simplified LDAP service to answer a vulnerable Java JNDI lookup. 
 
-## What's simulate 
+## What's simulated 
 
 ![alt text](https://github.com/sciccone/evil-ldap-service/blob/master/doc/evil-ldap-service.png)
 
